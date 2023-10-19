@@ -10,16 +10,16 @@ on:
         description: 'Docker Tag'
         required: true
         default: 'latest'
-  push:
-    branches: [main,master]
-    tags:
-      - 'v*.*.*'
-    # Only build when files in these directories have been changed
-    paths:
-      - client/**
-      - server/**
-      - index.js
-      - package.json
+  # push:
+  #   branches: [main,master]
+  #   tags:
+  #     - 'v*.*.*'
+  #   # Only build when files in these directories have been changed
+  #   paths:
+  #     - client/**
+  #     - server/**
+  #     - index.js
+  #     - package.json
 
 jobs:
   build:
